@@ -32,7 +32,8 @@ export default {
   created() {
     this.naver_id_login = new window.naver_id_login(
       "I0fXbGMKugcUoTHBS7cX",
-      "http://52.79.193.18:80/main"
+      //"http://52.79.193.18:80/main"
+      "http://localhost:1024/main" //local 개발 환경으로 url 수정
     );
     // 접근 토큰 값 출력
     console.log("access token", this.naver_id_login.getAccessToken()); // 정상적 로그인이 된 경우 access token값 출력

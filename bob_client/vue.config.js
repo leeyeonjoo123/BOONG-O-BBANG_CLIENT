@@ -4,7 +4,8 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       "/api": {
-        target: "http://boong-vpc-ec2-deploy-lb-999176414.ap-northeast-2.elb.amazonaws.com:80/",
+        //target: "http://boong-vpc-ec2-deploy-lb-999176414.ap-northeast-2.elb.amazonaws.com:80/",
+        target: "http://localhost:1024/",
         changeOrigin: true,
         pathRewrite: {
           "^/api": "",
