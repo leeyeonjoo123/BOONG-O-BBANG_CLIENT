@@ -20,7 +20,9 @@ export default {
   mounted() {
     this.naverLogin = new window.naver.LoginWithNaverId({
       clientId: "IapqRycG1ktrS42rWihn",
-      callbackUrl: "http://boong-o-bbang.com/naverLogin",
+      //local개발 환경으로 callbackUrl 수정
+      //callbackUrl: "http://boong-o-bbang.com/naverLogin",
+      callbackUrl: "http://localhost:1024/naverLogin",
       isPopup: false,
     });
     this.naverLogin.init();
